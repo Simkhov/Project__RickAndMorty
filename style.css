@@ -3,13 +3,14 @@
 
 html{
     font-size: 62.5%;
+    height: 100vh;
 }
 
 body{
-    background: #1e2124 ;
-    color: white;
+    color: rgba(255,255,255,0.8);
     margin: 0 5rem;
-    background:linear-gradient()
+    background: linear-gradient(30deg, #162440, #71b6f3);
+	background-size: 400% 400%;
 }
 
 header{
@@ -24,6 +25,8 @@ section{
 h1{
     font-size: 2rem;
     margin-top: 2rem;
+    font-family: "Anton";
+    font-size: 3rem;
 }
 
 h2{
@@ -31,7 +34,9 @@ h2{
     font-size: 5rem;
     text-transform: uppercase;
     font-family: "Anton";
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 p{
@@ -47,7 +52,8 @@ p{
     padding: 1.2rem;
     gap: 1.4rem;
     margin-top: 5rem;
-    padding-top: 5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(234, 238, 178,0.5);
 }
 
 .characters__item img{
@@ -70,23 +76,30 @@ figure{
 
 .character-details{
     display: flex;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 .buttons{
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #character-details--right{
-    width: 28vw;
+    width: 30vw;
     padding-left: 5rem;
     border-left: 1px solid rgba(255,255,255,0.3);
+    line-height: 1.5;
 }
 button{
     border: none;
     background-color: rgba(255,255,255,0.1);
     backdrop-filter: blur(1rem);
+    font-size: 3rem;
+    color: rgba(255,255,255,0.5);
 }
 
 button:hover{
@@ -95,10 +108,20 @@ button:hover{
 
 .transparancy{
     background-color: rgba(255,255,255,0.2);
+    width: 5rem;
+    height: 4rem;
 }
 
 .transparancy:hover{
     background-color: rgba(255,255,255,0.4);
+}
+
+#buttons__start{
+    width: 6rem;
+}
+
+#like{
+    border: 2px solid rgba(255,255,255,0.4);
 }
 
 @media screen and (max-width: 1000px) {
