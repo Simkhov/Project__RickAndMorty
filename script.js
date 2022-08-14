@@ -4,6 +4,16 @@
     let children = characters.children;
     const btnPrev = document.getElementById("buttons__previous");
     const btnNext = document.getElementById("buttons__next");
+
+    let like = document.getElementById("like");
+
+    console.log(like);
+
+    const addLike = () =>{
+      console.log("you've liked this");
+    }
+
+    like.addEventListener("click",addLike)
     
     const prev = () =>{
       characters.prepend(children[children.length-1]);
@@ -25,6 +35,7 @@
       }
       else{
         int++;
+        
       }
       handleCharacterChange();
     }
@@ -76,6 +87,7 @@
           <p class="character__instructions">Species: ${data.species}</p>
           <p class="character__instructions">Status: ${data.status}</p>
           <p class="character__instructions">Origin: ${data.origin.name}</p>
+          <button id="like">Like</button>
       </div>
       `;
     };
